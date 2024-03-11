@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/addproduct.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <title>Add product</title>
+</head>
+<body>
+    
+    <!--Sidebar-->
+    <section id="sidebar">
+        <div style="display: flex; row-gap: 10px; align-items: center; margin-left:5px;">
+            <img src="/images/logo.png" alt="logo" width="60px" height="40px" class="icons">
+            <p class="sale" id="current-business-name"></p>
+        </div>
+        <ul class="sd-menu">
+            <li><a href="admin.html" class="active"><img src="../adminpic/dashboard_bar chart_browser_website_statistics_icon.svg" alt="" width="30px" class="icons">Dashboard</a></li>
+            <li class="divider" data-text="main">Main</li>
+            <li><a href="addproduct.html"><img src="../adminpic/add_layer_ui_web_icon.svg" alt="" width="30px" class="icons">Add Products</a></li>
+            <li><a href="product.html"><img src="../adminpic/print_cubes_scheme_modular_color_edit_products_miscellaneous_icon_252420 (1).svg" alt="" width="30px" class="icons">Products</a></li>
+            <li><a href="sales.html"><img src="../adminpic/business_bar_diagram_statistics_horizontal_infographic_finance_chart_icon_252393.svg" alt="" width="30px" class="icons">Sales</a></li>
+            <li><a href="settings.html"><img src="../adminpic/5172979_engine_gear_internet_option_security_icon.svg" alt="" width="40px" class="icons">Settings</a></li>
+            <li><a href="" onclick="logout()"><img src="../adminpic/5172972_arrow_entrance_exit_internet_log_icon.svg" alt="" width="30px" class="icons">Logout</a></li>
+        </ul>
+    </section>
+    <!--Sidebar-->
+
+    <!--NAVIGATION-->
+    <section class="content">
+        <nav>
+            <span class="divider"></span>
+            <div class="profile">
+                <p id="current-username"></p>
+                <img src="../adminpic/aiony-haust-3TLl_97HNJo-unsplash.jpg">
+                <ul class="profile-link">
+                    <li><a href="profile.html"><img src="../adminpic/profile_user_avatar_icon.svg" alt="" class="icon">Profile</a></li>
+                    <li><a href="settings.html"><img src="../adminpic/reshot-icon-admin-roles-NUVPWKMYQL.svg" alt="">Settings</a></li>
+                    <li><a href="" onclick="logout()"><img src="../adminpic/user_account_off_door_arrow_leave_ui_exit_logout_icon_210826.svg" alt="">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+
+         <!--NAVIGATION-->
+         
+         <!--FORM PRODUCT-->
+         <section class="box">
+            <div class="container">
+              <h2 class="title">Add Product</h2>
+              <form id="add-product-form" onsubmit="Submit()">
+                <div class="product-info">
+                  <div class="input-box">
+                    <span class="details">Name</span>
+                    <input id="product-name" type="text" placeholder="Enter product name" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Quantity</span>
+                    <input id="product-quantity" type="number" placeholder="Enter quantity" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Buying Price</span>
+                    <input id="buying-price" type="number" placeholder="Enter buying price" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Selling Price</span>
+                    <input id="selling-price" type="number" placeholder="Enter selling price" required>
+                  </div>
+                </div>
+                <div class="button">
+                  <button type="submit" onsubmit="Submit()">Add Product</button>
+                  <div class="popup" id="popup">
+                    <img src="../adminpic/tick_check_accept_mark_icon.svg" alt="">
+                    <p id="product-response"></p>
+                    <button type="button" onclick="closePopup();  ">OK</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </section>
+          
+
+         
+          
+
+         <!-- -->
+    </section>
+         <script src="../js/admin.js"></script>
+         <script src="../js/addproduct.js"></script>
+         <script src="../js/logout.js"></script>
+        <script src="../js/account.js"></script>
+</body>
+</html>

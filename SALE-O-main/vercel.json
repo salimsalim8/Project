@@ -1,0 +1,23 @@
+<<<<<<< HEAD
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "frontend/html/*.html",
+        "use": "@vercel/static-build"
+      }
+    ]
+  }
+  
+=======
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "frontend/html/**/*.html",
+        "use": "@vercel/static-build"
+      }
+    ]
+  }
+  
+>>>>>>> 72c9dea97e6ae0a658d77d3c45a430121b6b0ea4

@@ -1,0 +1,172 @@
+:root {
+    --background: #8F97A3;
+    --activedark: #65A3FC;
+    --backgroundColor: #F6F9F9;
+    --loginColor: #BE2E8F;
+    --signupColor: #10185A;
+    --trynowColor: #56E348;
+    --fontblack: #000000;
+    --fontwhite: #FFFFFF;
+    --fontbl: #00003F;
+    --hoverColor: #47A8D4;
+}
+
+.mode {
+    position: absolute;
+    bottom: 50px;
+    line-height: 2rem;
+}
+
+.toggle-container {
+    position: absolute;
+    width: 50px;
+    height: 30px;
+  }
+  
+  .toggle-checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 34px;
+    background-color: #ccc;
+    border-radius: 17px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .toggle-label:after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+  
+  .toggle-checkbox:checked + .toggle-label {
+    background-color: #2196F3;
+  }
+  
+  .toggle-checkbox:checked + .toggle-label:after {
+    transform: translateX(26px);
+  }
+   
+  .dark-mode {
+    background: linear-gradient(to top left, var(--hoverColor),var(--fontbl) );
+    color: var(--fontwhite);
+  }
+
+.dark-mode #sidebar,
+.dark-mode nav,
+.dark-mode #sidebar .sale,
+.dark-mode main .data .content-info {
+    background-color: var(--fontbl);
+}
+
+  .dark-mode #sidebar .divider,
+  .dark-mode main .board li a {
+    color: var(--fontwhite);
+  }
+
+  .dark-mode main .board li a.active {
+    color: var(--hoverColor);
+  }
+
+  .dark-mode #sidebar .sd-menu a {
+    color: var(--fontwhite);
+  }
+
+  .dark-mode main .data-info .card {
+    background: var(--signupColor);
+  }
+
+  .dark-mode .product-list {
+    background: var(--signupColor);
+  }
+ 
+.dark-mode .box,
+.dark-mode .main {
+  background: linear-gradient(to top left, var(--hoverColor),var(--fontbl) );
+};
+
+.dark-mode .product-info {
+  color: var(--fontblack);
+}
+
+.dark-mode .contained {
+  background: var(--signupColor);
+}
+
+.dark-mode div .card {
+  background: var(--signupColor);
+}
+
+.dark-mode .tabs {
+  background: var(--fontbl);
+}
+
+.dark-mode .tabs .active {
+  background: var(--signupColor);
+}
+
+
+.dark-mode .tab-content {
+  background: var(--signupColor);
+  color: var(--fontblack);
+}
+
+.dark-mode .profile-card {
+  background: linear-gradient(to top left, var(--hoverColor),var(--signupColor) );
+}
+
+.dark-mode .email, .business, .location {
+  color: var(--fontblack)
+}
+
+.dark-mode .table tbody tr:hover {
+  background: var(--hoverColor);
+}
+
+.dark-mode .box-product {
+  background: var(--signupColor);
+}
+
+.dark-mode .button-delete {
+  background: var(--signupColor);
+  color: var;
+}
+
+.dark-mode .inbox h2,
+.dark-mode .inbox p {
+  color: var(--fontwhite);
+}
+
+.dark-mode .popup-selling,
+.dark-mode #confirmationPopup,
+.dark-mode .edit-form {
+  background: linear-gradient(to top left, var(--hoverColor),var(--signupColor) );
+}
+
+.dark-mode .form h2,
+.dark-mode .form .form-element label{
+  color: var(--fontwhite);
+}
+
+.dark-mode .popup {
+  background: var(--signupColor);
+  color: var(--fontwhite);
+}
+
+.dark-mode .overlay button {
+  color: var(--fontwhite);
+}

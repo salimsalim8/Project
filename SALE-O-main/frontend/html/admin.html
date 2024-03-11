@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <!--Sidebar-->
+    <section id="sidebar">
+        <div style="display: flex; row-gap: 10px; align-items: center; margin-left:5px;">
+          <img src="/images/logo.png" alt="logo" width="60px" height="40px" class="icons">
+          <p class="sale" id="current-business-name"></p>
+        </div>
+        <ul class="sd-menu">
+            <li><a href="#" class="active"><img src="../adminpic/dashboard_bar chart_browser_website_statistics_icon.svg" alt="" width="30px" class="icons">Dashboard</a></li>
+            <li class="divider" data-text="main">Main</li>
+            <li><a href="addproduct.html"><img src="../adminpic/add_layer_ui_web_icon.svg" alt="" width="30px" class="icons">Add Products</a></li>
+            <li><a href="product.html"><img src="../adminpic/print_cubes_scheme_modular_color_edit_products_miscellaneous_icon_252420 (1).svg" alt="" width="30px" class="icons">Products</a></li>
+            <li><a href="sales.html"><img src="../adminpic/business_bar_diagram_statistics_horizontal_infographic_finance_chart_icon_252393.svg" alt="" width="30px" class="icons">Sales</a></li>
+            <li><a href="settings.html"><img src="../adminpic/5172979_engine_gear_internet_option_security_icon.svg" alt="" width="40px" class="icons">Settings</a></li>
+            <li><a href="" onclick="logout()"><img src="../adminpic/5172972_arrow_entrance_exit_internet_log_icon.svg" alt="" width="30px" class="icons">Logout</a></li>
+        </ul>
+    </section>
+    
+    <section class="content">
+        <nav>
+          <span class="divider"></span>
+          <div class="profile">
+            <p id="current-username"></p>
+            <img src="../adminpic/aiony-haust-3TLl_97HNJo-unsplash.jpg">
+            <ul class="profile-link">
+              <li><a href="profile.html"><img src="../adminpic/profile_user_avatar_icon.svg" alt="" class="icon">Profile</a></li>
+              <li><a href="settings.html"><img src="../adminpic/reshot-icon-admin-roles-NUVPWKMYQL.svg" alt="">Settings</a></li>
+              <li><a href="#" onclick="logout()"><img src="../adminpic/user_account_off_door_arrow_leave_ui_exit_logout_icon_210826.svg" alt="">Logout</a></li>
+            </ul>
+          </div>
+        </nav>
+      
+        <main>
+          <h1 class="title">Dashboard</h1>
+          <ul class="board">
+            <li><a href="#">Home</a></li>
+            <li class="divider">/</li>
+            <li><a href="#" class="active">Dashboard</a></li>
+          </ul>
+          <div class="data-info">
+            <div class="card">
+              <div class="head">
+                <div>
+                  <h2 id="total-sold-products">0</h2>
+                  <p>Total Products Sold</p>
+                </div>
+                <img src="../adminpic/package_box_ui_web_icon.svg" alt="" width="40" class="icon">
+              </div>
+            </div>
+            <div class="card">
+              <div class="head">
+                <div>
+                  <h2 id="total-remaining-products">0</h2>
+                  <p>Total Remaining Products</p>
+                </div>
+                <img src="../adminpic/invoice_bill_business_payment_icon.svg" alt="" width="40" class="icon">
+              </div>
+            </div>
+            <div class="card">
+              <div class="head">
+                <div>
+                  <h2 id="total-sales">0</h2>
+                  <p>Total Sales</p>
+                </div>
+                <img src="../adminpic/money_cash_finance_icon.svg" alt="" width="50" class="icon tot">
+              </div>
+            </div>
+          </div>
+      
+          <div class="sales-products">
+            <div class="data"><a href="../html/product.html">
+                <div class="content-info">
+                  <div class="head">
+                    <h2>Products</h2>
+                  </div>
+                  <section class="product">
+                    <div class="product-list">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Name</th>
+                            <th>Quantity</th>
+                            <th>Selling Price</th>
+                            <th>Status</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody class="products-table-body">
+                          <!-- Rows will be dynamically added here -->
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+                </div>
+            </a></div>
+          
+              <div class="data"><a href="../html/sales.html"
+                <div class="content-info">
+                  <div class="head">
+                    <h2>Sales</h2>
+                  </div>
+                  <section class="sales">
+                    <div class="sales-list">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Selling Price</th>
+                            <th>Sold At</th>
+                          </tr>
+                        </thead>
+                        <tbody class="sales-table-body">
+                          <!-- Rows will be dynamically added here -->
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+                </div>
+            </a> </div>
+          </div>
+        </main>
+      </section>
+      
+    <!--NAVIGATION-->
+    <script src="../js/dashboard.js"></script>
+    <script src="../js/logout.js"></script>
+    <script src="../js/account.js"></script>
+    <script src="../js/admin.js"></script>
+</body>
+</html>
